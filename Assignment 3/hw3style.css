@@ -1,0 +1,178 @@
+  /*
+Program name: hw3style.css
+Author: Fariha Kapadia
+Date created: 03/06/2025
+Date last edited: 
+Version: 1.4
+Description: a patient registration form for a fictional hospital called River Park Medical.
+*/
+
+header 
+{
+    width: 100%;
+    background: rgb(236, 238, 255);
+}
+
+body 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(220, 218, 218);
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+}
+
+form 
+{
+    flex-grow: 1;
+}
+
+#footer 
+{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    margin-top: auto;
+    padding: 10px;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+h1, h2 
+{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+main 
+{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    flex-grow: 1;
+}
+
+.image 
+{
+    text-align: left;
+}
+
+td 
+{
+    padding: 5px;
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+.td1 
+{
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+th 
+{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+label 
+{
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+input {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+textarea {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+#today {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+p {
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.pword-message {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    position: relative;
+    left: 100px;
+    background: transparent;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: red;
+}
+
+#review {
+    margin-top: 5px;
+}
+
+td.output {
+    width: 500px;
+    background-color: seashell;
+    padding: 10px;
+    border-spacing: 2px;
+}
+
+table td {
+    padding: 5px 10px;
+}
+
+table td label {
+    margin-right: 5px;
+}
+
+input[type="text"] {
+    margin-right: 5px;
+    font-size: 14px;
+    width: 150px;
+}
+
+td > input {
+    margin-right: 8px;
+}
+
+#alert-box {
+    position: fixed; 
+    z-index: 9999;
+}
+
+#alert-content {
+    background-color: gray;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 3px;
+    text-align: center;
+}
