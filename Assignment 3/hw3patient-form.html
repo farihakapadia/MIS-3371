@@ -206,14 +206,17 @@ Description: a patient registration form for a fictional hospital called River P
                                 minlength="2" 
                                 maxlength="30" 
                                 required 
-                                required placeholder="City" />
+                                required placeholder="City"
+                                onblur="validateCity()" />
                         </td>
 
                         <!-- state -->
 
                         <td><label for="state">State:</label></td>
                         <td>
-                            <select name="state" id="state">
+                            <select 
+                            name="state" 
+                            id="state">
                                 <option selected disabled>Please Select One</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -443,7 +446,7 @@ Description: a patient registration form for a fictional hospital called River P
                                 type="password" 
                                 name="pword" 
                                 id="pword" 
-                                minlength="10" 
+                                minlength="8" 
                                 required onblur="validatePword()" 
                                 oninput="validatePword()" 
                                 onfocus="validatePword()" />
@@ -461,7 +464,7 @@ Description: a patient registration form for a fictional hospital called River P
                                 type="password" 
                                 name="con_pword" 
                                 id="con_pword" 
-                                minlength="10" 
+                                minlength="8" 
                                 required onblur="confirmPword()" 
                                 oninput="confirmPword()" 
                                 onfocus="confirmPword()" />
@@ -471,51 +474,54 @@ Description: a patient registration form for a fictional hospital called River P
 
                     <!-- submit, reset, review, and validate buttons -->
 
-                    <tr>
-                        <td colspan="4">
-                            <center>
-                                <input 
-                                    type="submit" 
-                                    name="submit"
-                                    value="Submit">
-                                <input 
-                                    type="reset" 
-                                    name="reset"
-                                    value="Reset" >
-                                <input 
-                                    type="button" 
-                                    name="review" 
-                                    value="Review Information" 
-                                    onclick="reviewInput()" >
-                                    
-                                    <input 
-                                    type="button" 
-                                    name="validate" 
-                                    id="validate" 
-                                    value="Validate" 
-                                    onclick="validateEverything()"/>
-                            </center>
+<tr>
+    <td colspan="4">
+        <center>
+            <input 
+            type="submit" 
+            id="submit" 
+            value="Submit"
+            disabled >
 
-                            <!-- password messages -->
+            <input 
+                type="reset" 
+                name="reset"
+                value="Reset" >
 
-                            <div class="pword-message">
-                                <span id="msg1"></span> <br />
-                                <span id="msg2"></span> <br />
-                                <span id="msg3"></span> <br />
-                                <span id="msg4"></span> <br />
-                                <span id="pword2-error"></span> <br />
-                            </div>
+            <input 
+                type="button" 
+                name="review" 
+                value="Review Information" 
+                onclick="reviewInput()" >
 
-                            <!-- input alert -->
+            <input 
+                type="button" 
+                name="validate" 
+                id="validate" 
+                value="Validate" 
+                onclick="validateEverything()">
 
-                            <div id="alert-box">
-                                <div id="alert-content">
-                                    <h4>Please fill out all required fields.</h4>
-                                    <button id="close-alert">OK</button>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
+        </center>
+
+        <!-- password messages -->
+        <div class="pword-message">
+            <span id="msg1"></span> <br />
+            <span id="msg2"></span> <br />
+            <span id="msg3"></span> <br />
+            <span id="msg4"></span> <br />
+            <span id="pword2-error"></span> <br />
+        </div>
+
+        <!-- input alert -->
+        <div id="alert-box">
+            <div id="alert-content">
+                <h4>Please fill out all required fields.</h4>
+                <button id="close-alert">OK</button>
+            </div>
+        </div>
+    </td>
+</tr>
+
                 </table>
             </div>
         </center>
@@ -524,7 +530,7 @@ Description: a patient registration form for a fictional hospital called River P
     <!-- shows user input -->
 
     <div id="showInput"></div>
-    <script src="hw3patient-form.js"></script>
+<script src="hw3patient-form.js" defer></script>
 
     <!-- end of form -->
 </body>
