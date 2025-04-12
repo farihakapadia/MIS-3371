@@ -1,164 +1,134 @@
-  /*
-Program name: hw3style.css
+/*
+Program name: hw3patient-form.js
 Author: Fariha Kapadia
 Date created: 03/06/2025
-Date last edited: 
-Version: 1.4
+Date last edited:04/12/2025
+Version: 2.8
 Description: a patient registration form for a fictional hospital called River Park Medical.
 */
 
-header 
-{
-    width: 100%;
-    background: rgb(236, 238, 255);
-}
-
-body 
-{
+/* Body Styling */
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(220, 218, 218);
+    background: #f7f9fc; /* Light background for modern look */
     margin: 0;
     height: 100%;
     min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-form 
-{
-    flex-grow: 1;
-}
-
-#footer 
-{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-    margin-top: auto;
-    padding: 10px;
-    background-color: whitesmoke;
+/* Header */
+header {
     width: 100%;
+    background: #3a6b85; /* Modern header color */
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
 
-h1, h2 
-{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+/* Form Styling */
+form {
+    max-width: 900px;
+    width: 100%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+th {
+    padding: 10px;
+    text-align: left;
+    background: #f1f5f9;
     font-weight: bold;
-    flex-grow: 1;
 }
 
-main 
-{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-    flex-grow: 1;
-}
-
-.image 
-{
-    text-align: left;
-}
-
-td 
-{
-    padding: 5px;
-    display: inline-block; 
-    vertical-align: middle; 
-}
-
-.td1 
-{
-    text-align: right;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-th 
-{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-label 
-{
-    text-align: right;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-}
-
-input {
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-}
-
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
 textarea {
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
 }
 
-#today {
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-    margin-right: 5px;
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
 }
 
-p {
-    text-align: right;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
+/* Labels */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #333;
 }
 
+/* Error message styling */
 .error {
     color: red;
     font-size: 14px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
+    margin-top: -10px;
 }
 
-.pword-message {
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif;
+/* Button Styling */
+input[type="button"],
+input[type="reset"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: auto;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+#footer {
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
     font-weight: normal;
+    padding: 15px;
+    background-color: #3a6b85;
+    color: white;
+    width: 100%;
     position: relative;
-    left: 100px;
-    background: transparent;
-    padding: 10px;
-    border-spacing: 2px;
-    border-radius: 20px;
-    color: red;
-}
-
-#review {
-    margin-top: 5px;
-}
-
-td.output {
-    width: 500px;
-    background-color: seashell;
-    padding: 10px;
-    border-spacing: 2px;
-}
-
-table td {
-    padding: 5px 10px;
-}
-
-table td label {
-    margin-right: 5px;
-}
-
-input[type="text"] {
-    margin-right: 5px;
-    font-size: 14px;
-    width: 150px;
-}
-
-td > input {
-    margin-right: 8px;
+    bottom: 0;
 }
 
 #alert-box {
@@ -174,8 +144,8 @@ td > input {
     align-items: center;
 }
 
-
 #alert-content {
+    position: center;
     background-color: #f0f4f8; 
     border-radius: 12px;
     width: 300px;
