@@ -336,43 +336,56 @@ function showAlert() {
     };
 }
 
+/* validates all fields */
+
 function validateEverything() {
-    console.log("Validate button clicked");
     let valid = true;
 
-    if (!validateFname()) valid = false;
-    if (!validateMini()) valid = false;
-    if (!validateLname()) valid = false;
-    if (!validateDob()) valid = false;
-    if (!validateSsn()) valid = false;
-    if (!validateAddress1()) valid = false;
-    if (!validateCity()) valid = false;
-    if (!validateZcode()) valid = false;
-    if (!validatePhone()) valid = false;
-    if (!validateEmail()) valid = false;
-    if (!validateUid()) valid = false;
-    if (!validatePword()) valid = false;
-    if (!confirmPword()) valid = false;
-
-    let submitContainer = document.getElementById("submit-container");
-
-    if (valid) {
-        if (!document.getElementById("submit")) {
-            let submitButton = document.createElement("input");
-            submitButton.type = "submit";
-            submitButton.id = "submit";
-            submitButton.value = "Submit";
-            submitContainer.appendChild(submitButton);
-        }
-    } else {
-        showAlert();
-
-        let existingButton = document.getElementById("submit");
-        if (existingButton) {
-            submitContainer.removeChild(existingButton);
-        }
+    if (!validateFname()) {
+        valid = false;
     }
-}
+    if (!validateMini()) {
+        valid = false;
+    }
+    if (!validateLname()) {
+        valid = false;
+    }
+    if (!validateDob()) {
+        valid = false;
+    }
+    if (!validateSsn()) {
+        valid = false;
+    }
+    if (!validateAddress1()) {
+        valid = false;
+    }
+    if (!validateCity()) {
+        valid = false;
+    }
+    if (!validateZcode()) {
+        valid = false;
+    }
+    if (!validateEmail()) {
+        valid = false;
+    }
+    if (!validatePhone()) {
+        valid = false;
+    }
+    if (!validateUid()) {
+        valid = false;
+    }
+    if (!validatePword()) {
+        valid = false;
+    }
+    if (!confirmPword()) {
+        valid = false;
+    }
+     if (valid) {
+         document.getElementById("submit").disabled = false;
+     } else{
+        showAlert();
+     }
+ }
 
 /* clears review */
 
