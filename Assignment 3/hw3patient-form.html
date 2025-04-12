@@ -1,13 +1,13 @@
+<!DOCTYPE html>
 <!--
 Program name: hw3patient-form.html
-Author: Fariha Kapadia  
+Author: Fariha Kapadia
 Date created: 03/06/2025
 Date last edited: 
 Version: 2.3
-Description:. a patient registration form for a fictional clinic called River Park Medical.
+Description: a patient registration form for a fictional hospital called River Park Medical.
 -->
 
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -39,7 +39,7 @@ Description:. a patient registration form for a fictional clinic called River Pa
     </header>
     <hr>
 
-    <!--form begins, patient information -->
+    <!--form begins -->
 
     <form id="signup" action="./hw3thank-you.html">
         <center>
@@ -322,7 +322,7 @@ Description:. a patient registration form for a fictional clinic called River Pa
                         </td>
                     </tr>
 
-                    <!-- medical info/history -->
+                    <!-- medical info -->
 
                     <tr>
                         <td><label for="history">Have you ever had:</label></td>
@@ -472,16 +472,13 @@ Description:. a patient registration form for a fictional clinic called River Pa
                         </td>
                     </tr>
 
-                    <!-- submit, reset, review, and validate buttons -->
+                   <!-- submit, reset, review, and validate buttons -->
 
 <tr>
     <td colspan="4">
         <center>
-            <input 
-            type="submit" 
-            id="submit" 
-            value="Submit"
-            disabled >
+
+            <div id="submit-container"></div>
 
             <input 
                 type="reset" 
@@ -512,7 +509,7 @@ Description:. a patient registration form for a fictional clinic called River Pa
             <span id="pword2-error"></span> <br />
         </div>
 
-        <!-- input alert message -->
+        <!-- input alert -->
         <div id="alert-box">
             <div id="alert-content">
                 <h4>Please fill out all required fields.</h4>
@@ -534,4 +531,4 @@ Description:. a patient registration form for a fictional clinic called River Pa
 
     <!-- end of form -->
 </body>
-</html>
+</html> 
