@@ -336,11 +336,9 @@ function showAlert() {
     };
 }
 
-/* validate everything */
-
 function validateEverything() {
-  console.log("Validate button clicked"); 
-  let valid = true;
+    console.log("Validate button clicked");
+    let valid = true;
 
     if (!validateFname()) valid = false;
     if (!validateMini()) valid = false;
@@ -356,11 +354,23 @@ function validateEverything() {
     if (!validatePword()) valid = false;
     if (!confirmPword()) valid = false;
 
+    let submitContainer = document.getElementById("submit-container");
+
     if (valid) {
-        document.getElementById("submit").disabled = false;
+        if (!document.getElementById("submit")) {
+            let submitButton = document.createElement("input");
+            submitButton.type = "submit";
+            submitButton.id = "submit";
+            submitButton.value = "Submit";
+            submitContainer.appendChild(submitButton);
+        }
     } else {
         showAlert();
-        document.getElementById("submit").disabled = true;
+
+        let existingButton = document.getElementById("submit");
+        if (existingButton) {
+            submitContainer.removeChild(existingButton);
+        }
     }
 }
 
