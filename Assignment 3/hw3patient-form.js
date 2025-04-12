@@ -2,8 +2,8 @@
 Program name: hw3patient-form.js
 Author: Fariha Kapadia
 Date created: 03/06/2025
-Date last edited: 
-Version: 2.3
+Date last edited: 04/12/2025
+Version: 4.5
 Description: a patient registration form for a fictional hospital called River Park Medical.
 */
 
@@ -336,7 +336,7 @@ function showAlert() {
     };
 }
 
-/* validates all fields */
+/* validates every field */
 
 function validateEverything() {
     let valid = true;
