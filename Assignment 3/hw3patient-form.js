@@ -4,7 +4,7 @@ Author: Fariha Kapadia
 Date created: 03/06/2025
 Date last edited: 04/12/2025
 Version: 4.5
-Description: a patient registration form for a fictional hospital called River Park Medical.
+Description: The JS for a patient registration form for a fictional hospital called River Park Medical.
 */
 
 /* date */
@@ -74,7 +74,6 @@ function validateMini() {
         return true;
     }
 }
-
 
 /* dob validation */
 
@@ -220,7 +219,7 @@ function validatePhone() {
     }
 }
 
-/* user id validation */
+/* uid validation */
 
 function validateUid() {
     uid = document.getElementById("uid").value.toLowerCase();
@@ -257,7 +256,7 @@ function validateUid() {
     }
 }
 
-/* password validation */
+/* pword validation */
 
 function validatePword() {
     const pword = document.getElementById("pword").value;
@@ -281,7 +280,7 @@ function validatePword() {
     }
 }
 
-/* password match confirmation */
+/* pword match confirmation */
 
 function confirmPword() {
     let pword1 = document.getElementById("pword").value;
