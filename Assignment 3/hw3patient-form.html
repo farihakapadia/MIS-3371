@@ -5,7 +5,7 @@ Author: Fariha Kapadia
 Date created: 03/06/2025
 Date last edited: 04/12/2025
 Version: 3.5
-Description: a patient registration form for a fictional hospital called River Park Medical.
+Description: A patient registration form for a fictional hospital called River Park Medical.
 -->
 
 <html lang="en">
@@ -424,6 +424,8 @@ Description: a patient registration form for a fictional hospital called River P
 
                     <!-- login info -->
 
+                    <!-- uid -->
+
                     <tr>
                         <td class="td1"><label for="uid">User ID:</label></td>
                         <td>
@@ -441,7 +443,7 @@ Description: a patient registration form for a fictional hospital called River P
                         </td>
                     </tr>
 
-                    <!-- password -->
+                    <!-- pword -->
 
                     <tr>
                         <td><label for="pword">Password:</label></td>
@@ -459,7 +461,7 @@ Description: a patient registration form for a fictional hospital called River P
                         </td>
                     </tr>
 
-                    <!-- password confirmation -->
+                    <!-- pword confirmation -->
 
                     <tr>
                         <td><label for="con_pword">Resubmit Password:</label></td>
@@ -476,56 +478,57 @@ Description: a patient registration form for a fictional hospital called River P
                         </td>
                     </tr>
 
-<!-- submit, reset, review, and validate buttons -->
-<tr>
-    <td colspan="4">
-        <center>
-
-            <input 
-                type="submit" 
-                id="submit" 
-                value="Submit" 
-                disabled />
-
-            <input 
-                type="reset" 
-                name="reset"
-                value="Reset" >
-
-            <input 
-                type="button" 
-                name="review" 
-                value="Review Information" 
-                onclick="reviewInput()" >
-
-            <input 
-                type="button" 
-                name="validate" 
-                id="validate" 
-                value="Validate" 
-                onclick="validateEverything()">
-
-        </center>
-
-        <!-- password messages -->
-        <div class="pword-message">
-            <span id="msg1"></span> <br />
-            <span id="msg2"></span> <br />
-            <span id="msg3"></span> <br />
-            <span id="msg4"></span> <br />
-            <span id="pword2-error"></span> <br />
-        </div>
-
-        <!-- input alert -->
-        <div id="alert-box">
-            <div id="alert-content">
-                <h4>Please fill out all required fields.</h4>
-                <button id="close-alert">OK</button>
-            </div>
-        </div>
-    </td>
-</tr>
-
+    <!-- submit, reset, review, and validate buttons -->
+                    
+        <tr>
+            <td colspan="4">
+                <center>
+                    <input 
+                        type="submit" 
+                        id="submit" 
+                        value="Submit" 
+                        disabled />
+        
+                    <input 
+                        type="reset" 
+                        name="reset"
+                        value="Reset" >
+        
+                    <input 
+                        type="button" 
+                        name="review" 
+                        value="Review Information" 
+                        onclick="reviewInput()" >
+        
+                    <input 
+                        type="button" 
+                        name="validate" 
+                        id="validate" 
+                        value="Validate" 
+                        onclick="validateEverything()">
+                </center>
+        
+                <!-- password messages -->
+                
+                <div class="pword-message">
+                    <span id="msg1"></span> <br />
+                    <span id="msg2"></span> <br />
+                    <span id="msg3"></span> <br />
+                    <span id="msg4"></span> <br />
+                    <span id="pword2-error"></span> <br />
+                </div>
+        
+                <!-- input alert -->
+                
+                <div id="alert-box">
+                    <div id="alert-content">
+                        <h4>Please fill out all required fields.</h4>
+                        <button id="close-alert">OK</button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+                    
                 </table>
             </div>
         </center>
@@ -537,5 +540,6 @@ Description: a patient registration form for a fictional hospital called River P
 <script src="hw3patient-form.js" defer></script>
 
     <!-- end of form -->
+    
 </body>
 </html> 
