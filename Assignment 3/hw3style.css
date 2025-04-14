@@ -4,31 +4,34 @@ Author: Fariha Kapadia
 Date created: 03/06/2025
 Date last edited:04/12/2025
 Version: 2.8
-Description: a patient registration form for a fictional hospital called River Park Medical.
+Description: The CSS for a patient registration form for a fictional hospital called River Park Medical.
 */
 
-/* Body Styling */
+/* body styling */
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #f7f9fc; /* Light background for modern look */
+    background: #f7f9fc; 
     margin: 0;
     height: 100%;
     min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Header */
+/* header styling */
+
 header {
     width: 100%;
-    background: #3a6b85; /* Modern header color */
+    background: #3a6b85; 
     color: white;
     padding: 15px;
     text-align: center;
 }
 
-/* Form Styling */
+/* form styling */
+
 form {
     max-width: 900px;
     width: 100%;
@@ -38,7 +41,8 @@ form {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Table Styling */
+/* table styling */
+
 table {
     width: 100%;
     margin: 20px 0;
@@ -82,7 +86,8 @@ textarea:focus {
     outline: none;
 }
 
-/* Labels */
+/* label styling */
+
 label {
     font-weight: bold;
     margin-bottom: 5px;
@@ -90,16 +95,19 @@ label {
     color: #333;
 }
 
-/* Error message styling */
+/* error message styling */
+
 .error {
     color: red;
     font-size: 14px;
     margin-top: -10px;
 }
 
-/* Button Styling */
+/* button styling */
+
 input[type="button"],
-input[type="reset"] {
+input[type="reset"],
+input[type="submit"]{
     background-color: #007BFF;
     color: white;
     padding: 12px 25px;
@@ -114,11 +122,13 @@ input[type="reset"] {
 }
 
 input[type="button"]:hover,
-input[type="reset"]:hover {
+input[type="reset"]:hover,
+input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-/* Footer Styling */
+/* footer styling */
+
 #footer {
     text-align: center;
     font-family: 'Segoe UI', sans-serif;
@@ -130,6 +140,8 @@ input[type="reset"]:hover {
     position: relative;
     bottom: 0;
 }
+
+/* alert styling */
 
 #alert-box {
     display: none; 
